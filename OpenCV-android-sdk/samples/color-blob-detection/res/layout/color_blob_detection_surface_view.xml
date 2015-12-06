@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <org.opencv.android.JavaCameraView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/color_blob_detection_activity_surface_view" 
+        />
+
+    <TextView
+        android:id="@+id/textViewPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="#FF0000"
+        android:textSize="16dip"
+        android:textStyle="bold"
+        android:text="TextView" />
+    
+      <ImageView
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:id="@+id/btnRight"
+          android:src="@drawable/right"
+          android:layout_above="@+id/btnDown"
+          android:layout_toRightOf="@+id/btnDown" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnLeft"
+        android:src="@drawable/left"
+        android:layout_above="@+id/btnDown"
+        android:layout_toLeftOf="@+id/btnDown" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnTop"
+        android:src="@drawable/top"
+        android:layout_above="@+id/btnLeft"
+        android:layout_toRightOf="@+id/btnLeft" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnDown"
+        android:clickable="true"
+        android:src="@drawable/down"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
